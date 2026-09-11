@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# stockroom
-=======
-
 # Telusko Trac - Product Inventory Management
 
 A comprehensive product inventory management system built with FastAPI backend and React frontend, providing seamless tracking and management of product inventory.
@@ -16,17 +12,20 @@ A comprehensive product inventory management system built with FastAPI backend a
 ## Setup
 
 1. **Create and activate virtual environment:**
+
    ```bash
    python -m venv myenv
    myenv\Scripts\activate.ps1  # Windows PowerShell
    ```
 
 2. **Install dependencies:**
+
    ```bash
    pip install fastapi uvicorn
    ```
 
 3. **Run the application:**
+
    ```bash
    uvicorn main:app --reload
    ```
@@ -49,16 +48,19 @@ stocksphere/
 ## API Usage Examples
 
 ### Get all products
+
 ```bash
 curl http://localhost:8000/products/
 ```
 
 ### Get product by ID
+
 ```bash
 curl http://localhost:8000/products/1
 ```
 
 ### Create a new product
+
 ```bash
 curl -X POST "http://localhost:8000/products/" \
      -H "Content-Type: application/json" \
@@ -74,6 +76,7 @@ curl -X POST "http://localhost:8000/products/" \
 ## Models
 
 ### Product
+
 - `id`: integer
 - `name`: string
 - `description`: string
@@ -85,4 +88,3 @@ curl -X POST "http://localhost:8000/products/" \
 - [FastAPI](https://fastapi.tiangolo.com/) - Modern, fast web framework for building APIs
 - [Pydantic](https://pydantic-docs.helpmanual.io/) - Data validation using Python type hints
 - [Uvicorn](https://www.uvicorn.org/) - ASGI server implementation
->>>>>>> baf978d (Prepare project for deployment)
