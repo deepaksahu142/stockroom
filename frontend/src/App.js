@@ -215,7 +215,7 @@ function App() {
     <div className="app-bg">
       <header className="topbar">
         <div className="brand">
-          <span className="brand-mark">SI</span>
+          <span className="brand-mark">SR</span>
           <div>
             <h1>Stockroom</h1>
             <span className="brand-subtitle">Inventory control center</span>
